@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akhlak.quizapp.Registerfrag">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etName"
+        android:layout_alignParentEnd="true"
+        android:hint="Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etName"
+        android:id="@+id/etEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:hint="Email Address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword2"
+        android:hint="Confirm Password"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bRegister"
+        android:layout_below="@+id/etPassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="onRegisterClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etUsername"
+        android:hint="Username"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</FrameLayout>
